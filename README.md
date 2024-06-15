@@ -1,4 +1,15 @@
-<p align="center">
+User: root
+Password: root
+MySQL service is disabled by default.
+Use the following command as a part of your job to start the service: 'sudo systemctl start mysql.service'Location: /home/linuxbrew
+Note: Homebrew is pre-installed on image but not added to PATH.
+run the eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" command
+to accomplish this.Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.User: postgres
+PostgreSQL service is disabled by default.
+Use the following command as a part of your job to start the service: 'sudo systemctl start postgresql.service'Location: /home/linuxbrew
+Note: Homebrew is pre-installed on image but not added to PATH.
+run the eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" command
+to accomplish this.<p align="center">
   <img src="docs/res/github-graph.png">
 </p>
 
