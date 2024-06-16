@@ -1,9 +1,74 @@
-<p align="center">
+// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: 'YOUR-TOKEN'
+})
+
+await octokit.request('DELETE /user/installations/{installation_id}/repositories/{repository_id}', {
+  installation_id: 1,
+  repository_id: 'REPOSITORY_ID',
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})<p align="center">
   <img src="docs/res/github-graph.png">
 </p>
 
 # GitHub Actions Runner
+// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: 'YOUR-TOKEN'
+})
 
+await octokit.request('PUT /user/installations/{installation_id}/repositories/{repository_id}', {
+  installation_id: 1,
+  repository_id: 'REPOSITORY_ID',
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: 'YOUR-TOKEN'
+})
+
+await octokit.request('GET /user/installations/{installation_id}/repositories', {
+  installation_id: 1,
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: 'YOUR-TOKEN'
+})
+
+await octokit.request('GET /user/installations', {
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: 'YOUR-TOKEN'
+})
+
+await octokit.request('DELETE /installation/token', {
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: 'YOUR-TOKEN'
+})
+
+await octokit.request('GET /user/installations', {
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})
 [![Actions Status](https://github.com/actions/runner/workflows/Runner%20CI/badge.svg)](https://github.com/actions/runner/actions)
 
 The runner is the application that runs a job from a GitHub Actions workflow. It is used by GitHub Actions in the [hosted virtual environments](https://github.com/actions/virtual-environments), or you can [self-host the runner](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-self-hosted-runners) in your own environment.
